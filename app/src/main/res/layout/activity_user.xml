@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <RelativeLayout
+        android:id="@+id/userlayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="79dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/top1"
+            android:visibility="visible"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/logo_usermanage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="프로필 삭제"
+            android:textSize="20dp"
+            android:visibility="invisible"/>
+        <Button
+            android:id="@+id/btn_deleteComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:background="#000000"
+            android:text="완료"
+            android:visibility="invisible"/>
+        <Button
+            android:id="@+id/btn_user_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:background="#000000"
+            android:text="삭제" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/upper"
+        android:layout_below="@id/userlayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Netflix를 시청할 프로필을 선택하세요."
+        android:textSize="20dp"
+        android:gravity="center"
+        android:visibility="visible"/>
+    <GridView
+        android:id="@+id/grid_user"
+        android:layout_below="@id/upper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:verticalSpacing="15dp"
+        >
+    </GridView>
+    <ImageButton
+        android:layout_marginTop="30dp"
+        android:id="@+id/plususerbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/grid_user"
+        android:scaleType="fitXY"
+        android:background="@drawable/button_click"
+        android:visibility="visible"/>
+
+</RelativeLayout>
